@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.container{
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.LeftImgs{
+  width: 40vw;
+}
+#Front {
+  position: relative;
+  left: 130px;
+  height: 225px;
+  width: 400px;
+  margin-top: 50px;
+}
+
+#Back {
+  position: relative;
+  left: 230px;
+  height: 225px;
+  width: 400px;
+  margin-top: 27px;
+}
+
+.cardText {
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+#cardNumber {
+  position: absolute;
+  top: 145px;
+  left: 160px;
+  letter-spacing: 4px;
+  font-size: 25px;
+}
+
+#cardName {
+  position: absolute;
+  top: 225px;
+  left: 160px;
+}
+
+#cardExp {
+  position: absolute;
+  top: 225px;
+  left: 450px;
+}
+
+#cardCvv {
+  position: absolute;
+  top: 405px;
+  left: 535px;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.RightForm {
+  position: absolute;
+  display: inline-flex;
+  flex-direction: column;
+  left: 60%;
+  top: 25%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+.RightForm input {
+  border: 1.5px solid black;
+  border-radius: 5px;
+  height: 2.5rem;
+  width: 65%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+  padding-left: 2%;
+  text-transform: uppercase;
+}
+
+.exp-cvv-num input {
+  width: 15%;
+  margin-right: 2%;
+}
+
+.exp-cvv-num input:last-child {
+  margin-left: 12%;
+}
+
+.exp-cvv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.exp-cvv label:last-child {
+  position: relative;
+  right: 43%;
+}
+
+.Submit {
+  width: 70%;
+  height: 3em;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.Submit:hover {
+  cursor: pointer;
+  transform: translateY(1px);
+
+}
+
+@media screen and (max-width:1050px) {
+  .RightForm {
+    top: 100%;
+    left: 35%;
+  }
+}
